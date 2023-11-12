@@ -1,35 +1,44 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import Register from "./routes/Register";
-import Login from "./routes/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Header from "./components/Header";
-import ProtectedRoutes from "./routes/ProtectedRoutes";
-import CreateTicket from "./routes/CreateTicket";
-import ViewTickets from "./routes/ViewTickets";
-import ViewTicket from "./routes/ViewTicket";
+import PrivateRoute from "./components/PrivateRoute";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import NewTicket from "./pages/NewTicket";
+import Tickets from "./pages/Tickets";
+import Ticket from "./pages/Ticket";
 
 function App() {
   return (
     <>
-      <Header />
-      <div className="page-container">
-        <Routes>
-          <Route path="/supportdesk" element={<Home />}></Route>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/register" element={<Register />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/new-ticket" element={<ProtectedRoutes />}>
-            <Route path="/new-ticket" element={<CreateTicket />}></Route>
-          </Route>
-          <Route path="/tickets" element={<ProtectedRoutes />}>
-            <Route path="/tickets" element={<ViewTickets />}></Route>
-          </Route>
-          <Route path="/ticket/:ticketId" element={<ProtectedRoutes />}>
-            <Route path="/ticket/:ticketId" element={<ViewTicket />}></Route>
-          </Route>
-        </Routes>
-      </div>
+      <Router>
+        <div className="container">
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+
+            {/* Protected routes */}
+            <Route path="/new-ticket" element={<PrivateRoute />}>
+              <Route path="/new-ticket" element={<NewTicket />} />
+            </Route>
+            <Route path="/tickets" element={<PrivateRoute />}>
+              <Route path="/tickets" element={<Tickets />} />
+            </Route>
+            <Route path="/ticket/:ticketId" element={<PrivateRoute />}>
+              <Route path="/ticket/:ticketId" element={<Ticket />} />
+            </Route>
+          </Routes>
+        </div>
+      </Router>
+
+      <ToastContainer />
     </>
   );
 }

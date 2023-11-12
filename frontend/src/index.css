@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-.page-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
@@ -52,7 +47,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 1rem;
+  padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 60px;
 }
@@ -80,22 +75,7 @@ h3 {
   margin-right: 5px;
 }
 
-.header-items {
-  display: flex;
-  /* justify-content: center; */
-  gap: 2rem;
-}
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .heading {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 50px;
@@ -129,12 +109,7 @@ h3 {
 .boxes a:hover {
   color: #777;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
+
 .form {
   width: 70%;
   margin: 0 auto;
@@ -162,7 +137,6 @@ form {
 }
 
 .btn {
-  margin-left: 1rem;
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 5px;
