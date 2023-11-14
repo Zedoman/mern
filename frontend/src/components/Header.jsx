@@ -8,7 +8,6 @@ function Header() {
   const dispatch = useDispatch();
 
   const { user } = useSelector((state) => state.auth);
-
   const onLogout = () => {
     dispatch(logout());
     dispatch(reset());
@@ -18,13 +17,15 @@ function Header() {
 
   return (
     <header className="header">
+
       <div className="logo">
         <Link to="/">Support Desk</Link>
+         
       </div>
-
       <ul>
         {user ? (
           <li>
+          
             <button className="btn" onClick={onLogout}>
               <FaSignOutAlt />
               Logout
@@ -46,7 +47,9 @@ function Header() {
           </>
         )}
       </ul>
+      
     </header>
+    
   );
 }
 

@@ -5,12 +5,12 @@ function Home() {
   return (
     <>
       <section className="heading">
-        <h1>What do you need help with?</h1>
-        <p>Please choose from an option below</p>
+        <h1>Want your issues to be solved?</h1>
+        <p>Create a support ticket now!</p>
       </section>
 
       <Link to="/new-ticket" className="btn btn-reverse btn-block">
-        <FaQuestionCircle /> Create New Ticket
+        <FaQuestionCircle /> Raise new ticket
       </Link>
 
       <Link to="/tickets" className="btn btn-block">
