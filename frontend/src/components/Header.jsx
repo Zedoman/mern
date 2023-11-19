@@ -12,7 +12,7 @@ function Header() {
     dispatch(logout());
     dispatch(reset());
 
-    navigate("/");
+    navigate("/", {state:{id : user}});
   };
 
   return (
@@ -23,9 +23,10 @@ function Header() {
          
       </div>
       <ul>
+        {user && <h2>Welcome <span > {user.name}</span></h2>}
         {user ? (
-          <li>
           
+          <li>
             <button className="btn" onClick={onLogout}>
               <FaSignOutAlt />
               Logout
