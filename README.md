@@ -15,4 +15,7 @@ Team Members
 2. Khushboo Choubey     21BSA10150
 3. Shivani Singh        21BCE11473
 4. Shiv Pratap Singh    21BCG10065
-5. Anuraan Paul         21BCE10534    
+5. Anuraan Paul         21BCE10534
+
+backend deploy link: https://back-vqf4.onrender.com/
+frontend deploy link: https://backend-mern-chi.vercel.app/
