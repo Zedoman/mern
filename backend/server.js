@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 } else {
   // Default route
   app.get("/", (res) => {
-    res.status(200).json({ message: "Welcome to Support Desk API" });
+    res.json({ message: "Welcome to Support Desk API" });
   });
 }
 
