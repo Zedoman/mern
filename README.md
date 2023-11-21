@@ -17,5 +17,9 @@ Team Members
 4. Shiv Pratap Singh    21BCG10065
 5. Anuraan Paul         21BCE10534
 
-backend deploy link: https://back-vqf4.onrender.com/
-frontend deploy link: https://backend-mern-chi.vercel.app/
+backend deploy link: https://mern-eth.onrender.com/
+frontend deploy link: https://mern-eta-six.vercel.app/
+
+https://github.com/Zedoman/mern/assets/91881492/8079797e-03e6-4162-a676-b90331a278c6
+
+
