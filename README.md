@@ -10,12 +10,7 @@ Installs all dependencies and packages.
 
 Runs the whole app
 
-Team Members
-1. Avradeep Nayak       21BCE10856
-2. Khushboo Choubey     21BSA10150
-3. Shivani Singh        21BCE11473
-4. Shiv Pratap Singh    21BCG10065
-5. Anuraan Paul         21BCE10534
+
 
 backend deploy link: https://mern-eth.onrender.com/
 frontend deploy link: https://mern-eta-six.vercel.app/
